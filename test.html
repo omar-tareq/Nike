@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="test.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+
+    <style>
+        @media (max-width:576px){
+
+            *{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    
+
+}
+
+.container{
+    background-color: #c92526;
+    min-width: 100%;
+    width: 100%;
+    position: relative;
+}
+
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    font-size: 12px;
+    margin: auto;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo{
+    width: 35px;
+}
+
+ul li{
+    display: inline-block;
+    
+}
+
+ul li a{
+    color: aliceblue;
+    padding: 10px;
+    text-decoration-line: none;
+    transition: 0.5s;
+    margin: 5px;
+
+}
+
+ul li a:hover{
+    color: #fdfc6f;
+    
+}
+
+.contant{
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    width: 89%;
+    margin: auto;
+    margin-top: 30%;
+
+
+}
+
+.contant .text{
+    width: 50%;
+    color: aliceblue;
+
+}
+
+
+.contant .text h2{
+    font-size: 18px;
+
+
+}
+
+.contant .text p{
+    font-size: 12px;
+    margin: 10px 0;
+
+
+}
+
+.contant .text a{
+
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    font-size: 10px;
+    background-color: aliceblue;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+.contant .image{
+width: 50%;
+}
+
+.contant .image img{
+    width: 180px;
+    transition: 0.5s;
+
+}
+
+.icon{
+    margin-top: 259px;
+    bottom: 0;
+    left: 50%;
+    transform: rotateX(-50%);
+    left: 50%;
+    transform: rotateX(50px);
+
+
+}
+
+.icon img{
+    width: 50px;
+   margin-bottom: 190px;
+    transition: 0.5s;
+    cursor: pointer;
+  
+}
+
+.icon img:hover{
+    transform: scale(1.2);
+}
+
+.hh{
+    color: aliceblue;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="container" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+
+        <header>
+            <a href="#" ><img src="ph/logo.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </header>
+    
+<br><br>
+    <div class="contant">
+        <div class="text">
+            <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"> Nike shoes</h2>
+           <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Maiores culpa.</p>
+            <a href="#">All Products</a>
+        </div>
+
+        <div class="image">
+            <img class="imgp" src="ph/i (3).png" >
+        </div>
+    </div>
+   
+    
+    <center>
+       
+        <div class="icon" >
+             <h1 class="hh">View your shoes</h1>
+            <img   onclick="phones(this.src) ; colors('#d5b300')" src="ph/i (1).png">
+            <img   onclick="phones(this.src) ; colors('#444347')" src="ph/i (2).png">
+            <img   onclick="phones(this.src) ; colors('#c92526')" src="ph/i (3).png">
+            <img   onclick="phones(this.src) ; colors('#227dc8')" src="ph/i (4).png">
+            <img   onclick="phones(this.src) ; colors('#b62d38')" src="ph/i (5).png">
+          
+        </div></center>
+    
+     
+   
+</div>
+
+
+    <script >
+        let imgp = document.querySelector('.imgp');
+let container = document.querySelector('.container');
+
+function phones(phone){
+    imgp.src = phone;
+}
+
+function colors(color){
+    container.style.backgroundColor = color;
+    container.style.transition = "0.4s";
+}
+
+
+    </script>
+</body>
+</html>
